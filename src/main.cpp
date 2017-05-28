@@ -12,8 +12,8 @@ int main(int argc, char const *argv[])
 
 	Ordenamiento A; //instancia de un objeto
     
-	A.Imprimir(A.Bubblesort(numeros));
-	A.Imprimir(A.Insercion(numeros));
+	A.Imprimir(A.Bubblesort(numeros));//Para imprimir en pantalla el vector acomodado con
+	A.Imprimir(A.Insercion(numeros)); //cada metodo
 	A.Imprimir(A.Seleccion(numeros));
 	A.Imprimir(A.MergeSort(numeros));
 

@@ -1,5 +1,5 @@
 #include "Ordenamiento.h"
-
+//Metdo de ordenamiento de la burbuja
 vector<int> Ordenamiento::Bubblesort(vector<int> l){
 
 	for (int i = 0; i < l.size()-1; ++i)
@@ -16,7 +16,7 @@ vector<int> Ordenamiento::Bubblesort(vector<int> l){
 
 	return l;
 }
-
+//Metodo de Insercion
 vector<int> Ordenamiento::Insercion(vector<int> l){
 	int aux;
 	for (int i = 1; i < l.size(); ++i)
@@ -31,7 +31,7 @@ vector<int> Ordenamiento::Insercion(vector<int> l){
 	}
 	return l;
 }
-
+//Metodo de seleccion
 vector<int> Ordenamiento::Seleccion(vector<int> l){
 	int aux;
 	for (int i = 0; i < l.size(); ++i)
@@ -46,7 +46,7 @@ vector<int> Ordenamiento::Seleccion(vector<int> l){
 	}
 	return l;
 }
-
+//metodo que encuentra el menor en el vector
 int Ordenamiento::Menor(vector<int> l,int i){
 	int aux=l[i];
 	int index=i;
@@ -60,7 +60,7 @@ int Ordenamiento::Menor(vector<int> l,int i){
 	}
 	return index;
 }
-
+//metodo que divide el vector
 vector<int> Ordenamiento::Merge(vector<int> left,vector<int> right){
 	vector<int> result;
 	while((int)left.size()>0 || (int)right.size()>0){
@@ -87,7 +87,7 @@ vector<int> Ordenamiento::Merge(vector<int> left,vector<int> right){
 	}
 	return result;
 }
-
+//metodo Merge sort
 vector<int> Ordenamiento::MergeSort(vector<int> l){
 	if (l.size() <= 1)
       return l;
@@ -109,7 +109,7 @@ vector<int> Ordenamiento::MergeSort(vector<int> l){
  
    return result;
 }
-
+//metodo para imprimir el vector ordenado
 void Ordenamiento::Imprimir(vector<int> l){
 	for (int i = 0; i < l.size(); i++)
 	{
